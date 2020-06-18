@@ -1,0 +1,89 @@
+html{position: relative;min-height: 100%;}
+body {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(31, 22, 153, 0.75), 
+      rgba(6, 5, 80, 0.75)
+    ),
+    /* bottom, image */
+    url('../assets/img/feather.png') no-repeat top left,
+    url('../assets/img/bg-masthead.jpg') repeat center center fixed;
+    font-family: 'Lato', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+a {-webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;}
+.btn {border-radius: 100px;-webkit-border-radius: 100px;-moz-border-radius: 100px;-o-border-radius: 100px;}
+  a:hover {text-decoration: none;}
+header.jumbotron {padding: 60px 0 10px;}
+header.jumbotron, .hero-txt {background: none;}
+header.jumbotron img {width: 260px;}
+.hero-txt {padding: 0;}
+.hero-txt h2 {font-weight: 900;margin-bottom: 20px;}
+.hero-txt strong{font-weight: 700;text-decoration: underline;}
+.hero-txt h2, .hero-txt h3 {font-size: 36px;color: #fff;}
+.hero-txt h3{font-weight:100 ;}
+.hero-list {margin: 80px 0;}
+.hero-list ul li, .hero-button ul>li, .main-footer ul li {display: inline-block;list-style: none;color: #fff;margin:0 100px;font-size: 22px;font-weight: 400;}
+.hero-list ul li i {margin: 0 10px 0 0;}
+.hero-button ul>li {margin: 0 10px;}
+.hero-button ul li button.xl-button {color: #1f1699;display: block;font-size: 28px;font-weight:300;padding: 20px 40px;border: 0;background: #fff;}
+.main-footer ul {padding: 5px 0;}
+.main-footer ul, .main-footer ul li {margin: 0;}
+.main-footer ul li.last {display: block;}
+.main-footer ul li {color: #fff;font-size: 14px;padding: 0 8px;}
+.main-footer ul li a {color: #fff;}
+.main-footer ul li a:hover{color: #f4623a;}
+.main-footer ul li p {font-size: 14px;font-weight: 400;}
+.hero-button ul>li button {cursor: pointer;}
+.hero-button ul>li button.xl-button:hover{color: #fff;text-shadow: none;}
+.hero-button ul>li button.xl-button:hover, .hero-button ul>li button.xl-button:focus, .hero-button ul>li button.xl-button.clicked {box-shadow: none;text-shadow: none;border: none;outline: 0;}
+.hero-button ul>li button.xl-button:active, .hero-button ul>li button.xl-button.clicked {background: #f4623a;color: #fff;border-radius: 100px;}
+.sweep-to-right {
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  border-radius: 10rem;
+}
+.sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: #f4623a;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+.sweep-to-right:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+  }
+  .main-footer p {margin: 0;}
+  .main-nav, .inside-footer {background: #f4623a;}
+  .main-nav a {color: #fff;font-weight: 900;line-height: 33px;}
+  .main-nav a img {max-width: 140px;}
